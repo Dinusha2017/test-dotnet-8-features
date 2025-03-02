@@ -26,3 +26,16 @@ foreach(string name in allStudents)
 Console.WriteLine(allNamesBuilder.Remove(allNamesBuilder.Length - 2, 2).ToString());
 
 Console.WriteLine();
+Console.WriteLine("Starting to check out INLINE ARRAYS!");
+SearchFields searchFields = new();
+searchFields[0] = "Id";
+searchFields[1] = "Name";
+searchFields[2] = "City";
+Console.WriteLine("Search Fields: ");
+foreach(string field in searchFields)
+{
+    Console.WriteLine(field);
+}
+Console.WriteLine($"Field Name property: {searchFields.FieldName}.");
+
+Console.WriteLine();
